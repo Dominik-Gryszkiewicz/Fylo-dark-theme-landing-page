@@ -3,10 +3,16 @@
     &-brand
         width: 25%
         margin-bottom: 3px
+        @media (min-width: 600px)
+            width: 20%
+        @media (min-width: 768px)
+            width: 18%
     &-nav
         @include font-size(.65rem)
         @media (min-width: 360px)
             @include font-size(.75rem)
+        @media (min-width: 768px)
+            @include font-size(.9rem)
         .nav-item
             .nav-link
                 color: hsl(0, 0%, 80%)

@@ -1,18 +1,19 @@
 .footer
     margin-top: 60px
     color: hsl(0, 0%, 90%)
-    &__content, &__content__info
-        display: flex
-        align-items: start
-        @include font-size(.85rem)
-        @media (min-width: 360px)
-            @include font-size(.9rem)
-        &__img
-            width: 15px
-            margin-right: 20px
-            margin-top: 4px
+    &__img-container
+        width: 60%
     &__content
-        margin-top: 40px
+        &__info
+            display: flex
+            align-items: start
+            @include font-size(.85rem)
+            @media (min-width: 360px)
+                @include font-size(.9rem)
+            &__img
+                width: 15px
+                margin-right: 20px
+                margin-top: 4px
     &__nav
         @include font-size(.9rem)
         &__list
