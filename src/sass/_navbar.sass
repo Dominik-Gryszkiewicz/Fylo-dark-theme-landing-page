@@ -1,0 +1,13 @@
+.navbar
+    position: absolute
+    &-brand
+        width: 25%
+        margin-bottom: 3px
+    &-nav
+        @include font-size(.65rem)
+        @media (min-width: 360px)
+            @include font-size(.75rem)
+        .nav-item
+            .nav-link
+                color: hsl(0, 0%, 80%)
+                font-weight: 400

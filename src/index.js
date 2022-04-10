@@ -1,1 +1,1 @@
-import bootstrap from 'bootstrap'
+import {Navbar} from 'bootstrap'

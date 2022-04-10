@@ -7,7 +7,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    main: ['./src/index.js', './sass/style.sass'],
+    main: ['./src/index.js', './src/sass/style.sass'],
   },
   output: {
     filename: 'js/[name]-[contenthash].js',
@@ -18,20 +18,6 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
-      },
-      {
-        test: /\.(sass|scss)$/,
-        use: [{
-          loader: 'postcss-loader',
-          options: {
-            plugins: function () {
-              return [
-                require('precss'),
-                require('autoprefixer')
-              ];
-            }
-          }
-        }]
       },
       {
         test: /\.(sass|scss)$/,

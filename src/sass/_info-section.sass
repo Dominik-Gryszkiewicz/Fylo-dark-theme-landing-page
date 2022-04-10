@@ -1,0 +1,25 @@
+.info
+    margin-top: 120px
+    &__texts
+        &__tittle
+            @include font-size(1rem)
+            @media (min-width: 360px)
+                @include font-size(1.1rem)
+        &__description
+            color: hsl(0, 0%, 87%)
+            @include font-size(.8rem)
+            @media (min-width: 360px)
+                @include font-size(.9rem)
+        &__link
+            color: hsl(176, 68%, 64%)
+            opacity: .9
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                bottom: -5px
+                left: 0
+                right: 0
+                height: 1px
+                background-color: hsl(176, 68%, 64%)
+                opacity: .9

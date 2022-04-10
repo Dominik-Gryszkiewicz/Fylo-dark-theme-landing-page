@@ -1,0 +1,43 @@
+.opinions
+    margin-top: 130px
+    &__box
+        background-color: hsl(219, 30%, 18%)
+        position: relative
+        padding: 30px 20px
+        margin-top: 25px
+        border-radius: 5px
+        &__img
+            width: 10%
+            position: absolute
+            top: 0
+            left: 5px
+            transform: translateY(-100%)
+        &__text
+            @include font-size(.65rem)
+            color: hsl(0, 0%, 85%)
+            margin-bottom: 0
+            @media (min-width: 360px)
+                @include font-size(.7rem)
+            @media (min-height: 900px)
+                @include font-size(.8rem)
+        &__author
+            margin-top: 20px
+            display: flex
+            align-items: center
+            &__img
+                width: 15%
+                border-radius: 50%
+            &__info
+                margin-left: 10px
+                @include font-size(.65rem)
+                @media (min-width: 360px)
+                    @include font-size(.7rem)
+                &__name
+                    margin-bottom: 0
+                    font-weight: bold
+                &__profession
+                    margin-bottom: 0
+                    color: hsl(0, 0%, 85%)
+                    @include font-size(.5rem)
+                    @media (min-width: 360px)
+                        @include font-size(.55rem)
