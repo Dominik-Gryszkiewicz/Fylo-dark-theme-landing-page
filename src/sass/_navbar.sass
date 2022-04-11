@@ -2,18 +2,32 @@
     position: absolute
     &-brand
         width: 25%
-        margin-bottom: 3px
+        @media (min-height: 896px)
+            margin-top: 5px
         @media (min-width: 600px)
             width: 20%
         @media (min-width: 768px)
             width: 18%
+        @media (min-width: 1024px)
+            width: 12%
+        @media (min-width: 1920px)
+            width: 14%
     &-nav
         @include font-size(.65rem)
         @media (min-width: 360px)
             @include font-size(.75rem)
         @media (min-width: 768px)
             @include font-size(.9rem)
+        @media (min-width: 1200px)
+            @include font-size(.85rem)
         .nav-item
             .nav-link
                 color: hsl(0, 0%, 80%)
                 font-weight: 400
+                text-decoration: underline
+                text-underline-offset: 2px
+                text-decoration-color: transparent
+                transition: color .2s, text-decoration .2s
+                &:hover
+                    color: hsl(0, 0%, 100%)
+                    text-decoration-color: hsl(0, 0%, 100%)

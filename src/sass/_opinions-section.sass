@@ -1,14 +1,26 @@
 .opinions
-    margin-top: 130px
+    margin-top: 140px
+    margin-bottom: 200px
+    @media (min-width: 1200px)
+        margin-top: 120px
+        margin-bottom: 290px
     &__box
         background-color: hsl(219, 30%, 18%)
         position: relative
         padding: 30px 20px
         margin-top: 25px
         border-radius: 5px
+        z-index: 1
+        transition: transform .5s
         @media (min-width: 768px)
             padding: 35px 30px
             margin-top: 35px
+        @media (min-width: 1200px)
+            width: 30%
+        &:hover
+            transform: translate(10px, 0)
+            @media (min-width: 1200px)
+                transform: translate(0, -10px)
         &__img
             width: 10%
             position: absolute
@@ -17,6 +29,11 @@
             transform: translateY(-100%)
             @media (min-width: 768px)
                 width: 7%
+            @media (min-width: 1200px)
+                width: 10%
+                left: -5px
+                top: 5px
+                z-index: -1
         &__text
             @include font-size(.65rem)
             color: hsl(0, 0%, 85%)

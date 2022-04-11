@@ -1,10 +1,18 @@
 .access
     margin-top: 120px
+    position: relative
     &__box
+        max-width: 900px
         background-color: hsl(217, 28%, 15%)
         padding: 30px 20px
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -25%)
         @media (min-width: 768px)
             padding: 35px 40px
+        @media (min-width: 1200px)
+            transform: translate(-50%, -60%)
         &__tittle
             @include font-size(1rem)
             @media (min-width: 360px)
@@ -18,11 +26,15 @@
             @media (min-width: 768px)
                 width: 85%
             &__input
-                padding: 13px 25px
+                padding: 10px 25px
                 border: none
                 outline: none
+                position: relative
                 @media (min-width: 768px)
                     padding: 15px 25px
+                @media (min-width: 1200px)
+                    width: 70%!important
+                    padding: 9px 25px
                 &::placeholder
                     @include font-size(.6rem)
                     opacity: .4
@@ -30,11 +42,32 @@
                         @include font-size(.7rem)
                     @media (min-width: 768px)
                         @include font-size(.9rem)
+            &__error
+                display: none
+                position: absolute
+                top: auto
+                left: auto
+                color: hsl(0, 100%, 63%)
+                opacity: .8
+                @include font-size(.6rem)
+                font-weight: bold
+                @media (min-width: 1200px)
+                    bottom: 0
+            &__error.active
+                display: block
             &__btn
-                padding: 13px 0
+                padding: 10px 0
                 border: none
+                outline: none
                 background: linear-gradient(34deg, hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 70%)
                 color: hsl(0, 0%, 100%)
                 font-weight: 700
+                transition: background .2s
                 @media (min-width: 768px)
                     padding: 15px 0
+                @media (min-width: 1200px)
+                    width: 30%!important
+                    padding: 9px 0
+                &:hover
+                    background: #8BDAE3
+                    color: white

@@ -1,12 +1,17 @@
 .info
     margin-top: 110px
     &__texts
+        @media (min-width: 1200px)
+            margin-left: 20px
         &__tittle
             @include font-size(1rem)
             @media (min-width: 360px)
                 @include font-size(1.1rem)
             @media (min-height: 1024px)
                 @include font-size(1.5rem)
+            @media (min-width: 1200px)
+                @include font-size(2rem)
+                margin-right: 100px
         &__description
             color: hsl(0, 0%, 87%)
             @include font-size(.8rem)
@@ -18,12 +23,18 @@
             color: hsl(176, 68%, 64%)
             opacity: .9
             position: relative
+            padding-bottom: 4px
+            transition: color .1s, background-color .1s
             &::after
                 content: ""
                 position: absolute
-                bottom: -5px
+                bottom: 0
                 left: 0
                 right: 0
                 height: 1px
                 background-color: hsl(176, 68%, 64%)
                 opacity: .9
+            &:hover
+                color: white
+                &::after
+                    background-color: white

@@ -1,8 +1,16 @@
 .footer
-    margin-top: 60px
     color: hsl(0, 0%, 90%)
+    background-color: hsl(216, 53%, 9%)
+    padding-top: 210px
+    margin-top: 80px
+    @media (min-width: 1200px)
+        padding-top: 100px
+    @media (min-width: 1920px)
+        padding-top: 130px
     &__img-container
-        width: 60%
+        width: 55%
+        @media (min-width: 1200px)
+            width: 15%
     &__content
         &__info
             display: flex
@@ -21,3 +29,14 @@
             padding-left: 0
             &__item
                 margin-top: 20px
+                a
+                    color: hsl(0, 0%, 85%)
+                    transition: color .2s
+                a:hover
+                    color: white
+    &__social-icons
+        &__link
+            img
+                transition: transform .2s
+            img:hover
+                transform: scale(1.2)

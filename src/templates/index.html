@@ -11,22 +11,22 @@
     <title>Fylo landing page</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand w-100 mt-sm-2">
+    <nav class="navbar navbar-expand w-100 mt-1 mt-md-3 mt-xl-4 mt-xxl-5">
         <div class="container">
-          <a class="navbar-brand px-1 mb-0" href="#"><img src="./images/logo.svg" alt="logo" class="img-fluid"></a>
+          <a class="navbar-brand px-1 pt-0 mb-0" href="#"><img src="./images/logo.svg" alt="logo" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link me-1" href="#">Features</a>
+                <a class="nav-link me-1 me-sm-3 me-xl-4 me-xxl-5 pe-xl-3 pe-xxl-1" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-1" href="#">Team</a>
+                <a class="nav-link me-1 me-sm-3 me-xl-4 me-xxl-5 pe-xl-3 pe-xxl-1" href="#team">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-1" href="#">Sign In</a>
+                <a class="nav-link" href="#sign">Sign In</a>
               </li>
             </ul>
           </div>
@@ -35,37 +35,39 @@
     <header class="hero d-flex justify-content-center
     align-items-center">
         <div class="container">
-            <div class="hero__content text-center px-2 mt-4">
-                <div class="hero__content__img mx-auto">
-                    <img src="./images/illustration-intro.png" alt="illustration-work" class="img-fluid">
+            <div class="row">
+                <div class="hero__content text-center px-4 mt-3 mt-md-4 mx-md-auto col-xl-11 col-xxl-12">
+                    <div class="hero__content__img mx-auto">
+                        <img src="./images/illustration-intro.png" alt="illustration-work" class="img-fluid">
+                    </div>
+                    <h1 class="hero__content__tittle mt-4">All your files in one secure location, accessible anywhere.</h1>
+                    <p class="hero__content__description px-3 px-md-5 mt-3">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+                    <a href="#" class="hero__content__btn d-inline-block rounded-pill mt-2">Get Started</a>
                 </div>
-                <h1 class="hero__content__tittle mt-4">All your files in one secure location, accessible anywhere.</h1>
-                <p class="hero__content__description px-3 px-md-5 mt-3">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-                <a href="#" class="hero__content__btn d-inline-block rounded-pill mt-2">Get Started</a>
             </div>
         </div>
     </header>
     <main>
-        <section class="advantages text-center">
+        <section class="advantages text-center" id="features">
             <div class="container">
-                <div class="row">
-                    <div class="advantages__box">
+                <div class="row justify-content-md-around justify-content-xl-center align-items-md-baseline">
+                    <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere" class="advantages__box__img img-fluid">
                         <h3 class="advantages__box__tittle">Access your files, anywhere</h3>
                         <p class="advantages__box__description">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
                     </div>
-                    <div class="advantages__box">
+                    <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-security.svg" alt="icon-access-anywhere" class="advantages__box__img img-fluid">
                         <h3 class="advantages__box__tittle">Security you can trust</h3>
                         <p class="advantages__box__description">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
                     </div>
-                    <div class="advantages__box">
+                    <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-collaboration.svg" alt="icon-access-anywhere img-fluid" class="advantages__box__img">
                         <h3 class="advantages__box__tittle">Real-time collaboration</h3>
                         <p class="advantages__box__description">Securely share files and folders with friends, family and colleagues for live collaboration. 
                             No email attachments required.</p>
                     </div>
-                    <div class="advantages__box">
+                    <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-any-file.svg" alt="icon-access-anywhere" class="advantages__box__img img-fluid">
                         <h3 class="advantages__box__tittle">Store any type of file</h3>
                         <p class="advantages__box__description">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
@@ -73,13 +75,13 @@
                 </div>
             </div>
         </section>
-        <section class="info px-3 px-md-5">
+        <section class="info px-3 px-md-5" id="team">
             <div class="container">
-                <div class="row">
-                    <div class="info__img d-flex justify-content-center">
+                <div class="row justify-content-xl-center align-items-xl-center">
+                    <div class="info__img d-flex justify-content-center col-xl-6">
                         <img src="./images/illustration-stay-productive.png" alt="image-productive" class="img-fluid">
                     </div>
-                    <div class="info__texts">
+                    <div class="info__texts col-xl-5">
                         <h1 class="info__texts__tittle mt-4">Stay productive, wherever you are</h1>
                         <p class="info__texts__description mt-3">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
                         <p class="info__texts__description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
@@ -90,8 +92,8 @@
         </section>
         <section class="opinions">
             <div class="container">
-                <div class="row flex-column align-items-center">
-                    <div class="opinions__box col-9">
+                <div class="row flex-column align-items-center flex-xl-row justify-content-xl-around">
+                    <div class="opinions__box col-9 col-xl-4">
                         <img src="./images/bg-quotes.png" alt="quotes" class="opinions__box__img">
                         <p class="opinions__box__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
                         <div class="opinions__box__author">
@@ -102,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="opinions__box col-9">
+                    <div class="opinions__box col-9 col-xl-4">
                         <p class="opinions__box__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
                             become a well-oiled collaboration machine.</p>
                         <div class="opinions__box__author">
@@ -113,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="opinions__box col-9">
+                    <div class="opinions__box col-9 col-xl-4">
                         <p class="opinions__box__text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
                             become a well-oiled collaboration machine.</p>
                         <div class="opinions__box__author">
@@ -127,56 +129,59 @@
                 </div>
             </div>
         </section>
-        <section class="access text-center">
+        <section class="access text-center" id="sign">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="access__box rounded col-10">
+                    <div class="access__box rounded col-10 col-xl-7 col-xxl-6">
                         <h2 class="access__box__tittle mt-1">Get early access today</h2>
-                        <p class="access__box__description pt-1 pt-md-2">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-                        <form action="#" class="access__box__form mt-4 pt-md-3 mx-md-auto">
+                        <p class="access__box__description pt-1 pt-md-2 px-xl-5">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                        <form action="" class="access__box__form mt-4 pt-md-3 mx-md-auto d-xl-flex">
                             <input type="text" placeholder="email@example.com" class="access__box__form__input d-block w-100 rounded-pill">
-                            <button class="access__box__form__btn d-block w-100 rounded-pill mt-4 ">Get Started For Free</button>
+                            <p class="access__box__form__error ms-4">Please enter a valid email adress</p>
+                            <button class="access__box__form__btn d-block w-100 rounded-pill mt-4 mt-xl-0 ms-xl-4">Get Started For Free</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer px-3">
+    <footer class="footer px-3 mt-xl-0">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="footer__img-container me-auto ms-2">
+                <div class="footer__img-container me-auto ms-2 mt-md-5 pt-md-3">
                     <img src="./images/logo.svg" alt="logo" class="img-fluid">
                 </div>
-                <div class="row">
-                    <div class="footer__content gx-0 col-md-6">
-                        <div class="footer__content__info mt-5">
+                <div class="row align-items-xl-start justify-content-xl-between mt-xl-4 mb-xl-5 py-xl-2">
+                    <div class="footer__content gx-0 col-md-6 d-xl-flex align-items-xl-start">
+                        <div class="footer__content__info mt-5 mt-xl-0 pe-xl-5 me-xxl-2">
                             <img src="./images/icon-location.svg" alt="icon-location" class="footer__content__info__img">
                             <p class="footer__content__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
-                        <div class="footer__content__info">
-                            <img src="./images/icon-phone.svg" alt="icon-phone" class="footer__content__info__img">
-                            <p class="footer__content__info__text">+1-543-123-4567</p>
-                        </div>
-                        <div class="footer__content__info">
-                            <img src="./images/icon-email.svg" alt="icon-email" class="footer__content__info__img">
-                            <p class="footer__content__info__text">example@fylo.com</p>
+                        <div class="d-xl-flex flex-xl-column">
+                            <div class="footer__content__info">
+                                <img src="./images/icon-phone.svg" alt="icon-phone" class="footer__content__info__img">
+                                <p class="footer__content__info__text">+1-543-123-4567</p>
+                            </div>
+                            <div class="footer__content__info">
+                                <img src="./images/icon-email.svg" alt="icon-email" class="footer__content__info__img">
+                                <p class="footer__content__info__text">example@fylo.com</p>
+                            </div>
                         </div>
                     </div>
-                    <nav class="footer__nav d-sm-flex justify-content-around col-md-6 ps-0 mt-4">
+                    <nav class="footer__nav d-sm-flex justify-content-around col-md-6 col-xl-3 ps-0 ps-xxl-5 mt-4 mt-xl-0 ms-xl-auto">
                         <ul class="footer__nav__list">
-                            <li class="footer__nav__list__item"><a href="#">About Us</a></li>
+                            <li class="footer__nav__list__item mt-xl-0"><a href="#">About Us</a></li>
                             <li class="footer__nav__list__item"><a href="#">Jobs</a></li>
                             <li class="footer__nav__list__item"><a href="#">Press</a></li>
                             <li class="footer__nav__list__item"><a href="#">Blog</a></li>
                         </ul>
-                        <ul class="footer__nav__list mt-5 mt-md-0">
-                            <li class="footer__nav__list__item"><a href="#">Contact Us</a></li>
+                        <ul class="footer__nav__list mt-5 mt-xl-0 mt-md-0">
+                            <li class="footer__nav__list__item mt-xl-0"><a href="#">Contact Us</a></li>
                             <li class="footer__nav__list__item"><a href="#">Terms</a></li>
                             <li class="footer__nav__list__item"><a href="#">Privacy</a></li>
                         </ul>
                     </nav>
-                    <div class="footer__social-icons my-5 text-center">
+                    <div class="footer__social-icons my-5 my-xl-0 text-center text-xl-end col-xl-2">
                         <a href="#" class="footer__social-icons__link"><img src="./images/facebook.svg" alt="facebook-icon" class="footer__social-icons__link__img"></a>
                         <a href="#" class="footer__social-icons__link mx-3"><img src="./images/twitter.svg" alt="twitter-icon" class="footer__social-icons__link__img"></a>
                         <a href="#" class="footer__social-icons__link"><img src="./images/instagram.svg" alt="instagram-icon" class="footer__social-icons__link__img"></a>

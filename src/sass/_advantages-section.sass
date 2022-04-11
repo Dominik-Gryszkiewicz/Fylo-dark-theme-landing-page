@@ -1,9 +1,13 @@
 .advantages
     margin-top: 40px
     @media (min-height: 780px)
-        margin-top: -30px
+        // margin-top: -30px
     &__box
         margin-top: 3.5rem
+        transition: .5s
+        &:hover
+            cursor: pointer
+            transform: scale(1.05)
         &__img
             @media (min-width: 768px)
                 transform: scale(1.3)
