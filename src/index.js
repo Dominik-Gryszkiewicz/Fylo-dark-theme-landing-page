@@ -1,4 +1,7 @@
 import {Navbar} from 'bootstrap'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const emailInput = document.querySelector('.access__box__form__input')
 const submitBtn = document.querySelector('.access__box__form__btn')
@@ -18,4 +21,3 @@ submitBtn.addEventListener('click', (e) => {
         emailError.classList.remove('active')
     }
 })
-

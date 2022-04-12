@@ -11,7 +11,7 @@
     <title>Fylo landing page</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand w-100 mt-1 mt-md-3 mt-xl-4 mt-xxl-5">
+    <nav class="navbar navbar-expand w-100 mt-1 mt-md-3 mt-xl-4" id="navbar">
         <div class="container">
           <a class="navbar-brand px-1 pt-0 mb-0" href="#"><img src="./images/logo.svg" alt="logo" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +48,10 @@
         </div>
     </header>
     <main>
-        <section class="advantages text-center" id="features">
+        <section class="advantages text-center mt-md-0" id="features" data-aos="zoom-in" data-aos-anchor=".advantages__box__img">
             <div class="container">
                 <div class="row justify-content-md-around justify-content-xl-center align-items-md-baseline">
-                    <div class="advantages__box col-md-5 px-md-0 px-xl-5">
+                    <div class="advantages__box col-md-5 px-md-0 px-xl-5 mt-3">
                         <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere" class="advantages__box__img img-fluid">
                         <h3 class="advantages__box__tittle">Access your files, anywhere</h3>
                         <p class="advantages__box__description">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
@@ -64,8 +64,7 @@
                     <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-collaboration.svg" alt="icon-access-anywhere img-fluid" class="advantages__box__img">
                         <h3 class="advantages__box__tittle">Real-time collaboration</h3>
-                        <p class="advantages__box__description">Securely share files and folders with friends, family and colleagues for live collaboration. 
-                            No email attachments required.</p>
+                        <p class="advantages__box__description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
                     </div>
                     <div class="advantages__box col-md-5 px-md-0 px-xl-5">
                         <img src="./images/icon-any-file.svg" alt="icon-access-anywhere" class="advantages__box__img img-fluid">
@@ -75,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="info px-3 px-md-5" id="team">
+        <section class="info px-3 px-md-5" id="team" data-aos="fade-right" data-aos-anchor=".info__img">
             <div class="container">
                 <div class="row justify-content-xl-center align-items-xl-center">
                     <div class="info__img d-flex justify-content-center col-xl-6">
@@ -90,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="opinions">
+        <section class="opinions" data-aos="fade-left" data-aos-anchor=".opinions__box">
             <div class="container">
                 <div class="row flex-column align-items-center flex-xl-row justify-content-xl-around">
                     <div class="opinions__box col-9 col-xl-4">
@@ -129,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section class="access text-center" id="sign">
+        <section class="access text-center" id="sign" data-aos="fade-up">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="access__box rounded col-10 col-xl-7 col-xxl-6">
