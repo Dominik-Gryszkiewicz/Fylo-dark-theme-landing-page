@@ -12,7 +12,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Dominik-Gryszkiewicz/Fylo-dark-theme-landing-page
-- Live Site URL: https://fylo-dark-landing-page5.netlify.app/
+- Live Site URL: https://fylo-dark-ladning-page5.netlify.app/
 
 ### Built with
 
