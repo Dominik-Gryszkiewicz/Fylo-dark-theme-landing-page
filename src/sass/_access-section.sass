@@ -1,18 +1,12 @@
 .access
-    margin-top: 120px
-    position: relative
+    margin-top: -1.5rem
     &__box
         max-width: 900px
         background-color: hsl(217, 28%, 15%)
         padding: 30px 20px
-        position: absolute
-        top: 0
-        left: 50%
-        transform: translate(-50%, -25%)
+        transform: translateY(50%)
         @media (min-width: 768px)
             padding: 35px 40px
-        @media (min-width: 1200px)
-            transform: translate(-50%, -60%)
         &__tittle
             @include font-size(1rem)
             @media (min-width: 360px)

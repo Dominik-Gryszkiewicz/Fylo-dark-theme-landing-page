@@ -1,15 +1,9 @@
 .opinions
-    margin-top: 100px
-    margin-bottom: 200px
+    margin-top: 7rem
     @media (min-height: 780px)
         margin-top: 120px
-        margin-bottom: 220px
     @media (min-height: 910px)
         margin-top: 150px
-        margin-bottom: 240px
-    @media (min-width: 1200px)
-        margin-top: 120px
-        margin-bottom: 290px
     &__box
         background-color: hsl(219, 30%, 18%)
         position: relative
@@ -25,6 +19,7 @@
             width: 30%
         &:hover
             transform: translate(10px, 0)
+            cursor: pointer
             @media (min-width: 1200px)
                 transform: translate(0, -10px)
         &__img
